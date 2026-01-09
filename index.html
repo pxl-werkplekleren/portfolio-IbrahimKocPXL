@@ -4,9 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Portfolio</h1>
-    <h2>Ibrahim Koc</h2>
+<header>
+    <div class="container">
+        <h1>Mijn Portfolio</h1>
+        <p>Graduaat in Programmeren - Hogeschool PXL</p>
+    </div>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="intro.html">Introductie</a></li>
+                <li><a href="logboek.html">Logboek</a></li>
+                <li><a href="ontwikkeling.html">Ontwikkeling</a></li>
+                <li><a href="opdrachten.html">Opdrachten</a></li>
+                <li><a href="reflectie.html">Reflectie</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="container">
+    <section class="grid grid-cols-2 gap-8 mb-12 mt-8">
+        <div class="card flex flex-col">
+            <div class="flex items-center mb-4 flex-col md:flex-row md:items-start">
+                <a href="https://www.linkedin.com/in/ibrahim-koc-05b69b39b/" class="mb-4 md:mb-0">
+                    <img src="./images/Profile.jpg" alt="Profile" class="w-24 h-24 rounded-full object-cover md:mr-6 border-2 border-primary hover:scale-105 hover:border-primary-hover transition-transform duration-300">
+                </a>
+                <div class="md:ml-6 text-center md:text-left">
+                    <h2>Ibrahim Koc</h2>
+                    <p class="text-muted">Graduaat in Programmeren</p>
+                </div>
+            </div>
+            <div class="space-y-2">
+                <p><strong>Adres:</strong> Binnenlaan 44, 3600 Genk</p>
+                <p><strong>Geboortedatum:</strong> 21/07/2002</p>
+                <p><strong>Email:</strong> ibrahim.koc@student.pxl.be</p>
+                <p><strong>Telefoon:</strong> +32 488 32 74 07</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Welkom bij mijn portfolio</h2>
+            <p class="mb-4">Dit portfolio documenteert mijn leerproces tijdens (momenteel) Werkplekleren 1 in de Graduaatsopleiding in Programmeren aan Hogeschool PXL.</p>
+            <a href="intro.html" class="btn block text-center">Begin met lezen</a>
+        </div>
+    </section>
+    
+    <div class="grid grid-cols-3 gap-6">
+        <div class="card">
+            <h3>Introductie</h3>
+            <p class="text-muted mb-4">Mijn persoonlijke achtergrond en motivatie.</p>
+            <a href="intro.html" class="link">Lees introductie ?</a>
+        </div>
+            
+        <div class="card">
+            <h3>Logboek</h3>
+            <p class="text-muted mb-4">De planning van heel het semester van Werkplekleren 1.</p>
+            <a href="logboek.html" class="link">Bekijk logboek ?</a>
+        </div>
+            
+        <div class="card">
+            <h3>Competenties</h3>
+            <p class="text-muted mb-4">Mijn ontwikkeling in de 5 rollen van een programmeur.</p>
+            <a href="ontwikkeling.html" class="link">Bekijk ontwikkeling ?</a>
+        </div>
+            
+        <div class="card">
+            <h3>Opdrachten</h3>
+            <p class="text-muted mb-4">Mijn uitgevoerde projecten en taken.</p>
+            <a href="opdrachten.html" class="link">Bekijk opdrachten ?</a>
+        </div>
+            
+        <div class="card">
+            <h3>Reflectie</h3>
+            <p class="text-muted mb-4">Mijn reflecties volgens het AIM-model en X-Factor en mijn kernkwadranten .</p>
+            <a href="reflectie.html" class="link">Lees reflectie ?</a>
+        </div>
+            
+        <div class="card">
+            <h3>Contact</h3>
+            <p class="text-muted mb-4">Neem contact met me op voor vragen.</p>
+            <a href="mailto:ibrahim.koc@student.pxl.be" class="link">Stuur email ?</a>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container text-center">
+        <p>Mijn Portfolio - Werkplekleren 1</p>
+        <p>Graduaat in Programmeren - Hogeschool PXL</p>
+    </div>
+</footer>
 </body>
 </html>
