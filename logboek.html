@@ -1,239 +1,96 @@
 <!DOCTYPE html>
-<html lang="nl" class="dark">
+<html lang="nl">
 <head>
+    <script>document.documentElement.classList.add("js");</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logboek - Mijn Portfolio</title>
+    <title>Logboek - Portfolio Ibrahim Koc</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body class="dark-bg light-text full-height">
-<header class="bg-gray-800 shadow-lg">
-    <div class="container mx-auto px-4 py-6">
-        <h1 class="text-3xl font-bold">Logboek</h1>
-        <p class="text-gray-400">Graduaat in Programmeren - Hogeschool PXL</p>
+<body id="top">
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand-link" href="index.html">
+            <h1 class="brand-title">Portfolio Ibrahim Koc</h1>
+            <p class="brand-subtitle">Graduaat Programmeren - Hogeschool PXL</p>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Navigatie openen"><span></span><span></span></button>
+        <nav class="main-nav" id="main-nav" aria-label="Hoofdnavigatie">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="intro.html">Introductie</a>
+            <a class="nav-link" href="logboek.html">Logboek</a>
+            <a class="nav-link" href="ontwikkeling.html">Ontwikkeling</a>
+            <a class="nav-link" href="opdrachten.html">Opdrachten</a>
+            <a class="nav-link" href="reflectie.html">Reflectie</a>
+        </nav>
     </div>
-    <nav class="bg-gray-700">
-        <div class="container mx-auto px-4">
-            <ul class="flex flex-wrap">
-                <li class="mr-6"><a href="index.html" class="block py-4 px-2 hover:bg-gray-600">Home</a></li>
-                <li class="mr-6"><a href="intro.html" class="block py-4 px-2 hover:bg-gray-600">Introductie</a></li>
-                <li class="mr-6"><a href="ontwikkeling.html" class="block py-4 px-2 hover:bg-gray-600">Ontwikkeling</a></li>
-                <li class="mr-6"><a href="opdrachten.html" class="block py-4 px-2 hover:bg-gray-600">Opdrachten</a></li>
-                <li class="mr-6"><a href="reflectie.html" class="block py-4 px-2 hover:bg-gray-600">Reflectie</a></li>
-            </ul>
-        </div>
-    </nav>
 </header>
-<main class="container mx-auto px-4 py-8">
-    <div class="mb-12">
-        <div class="card w-full">
-	    <h2 class="text-2xl font-bold mb-6">Werkplekleren 1 Planning</h2>
-            <div class="mt-6 text-center">
-                <a href="ontwikkeling.html" class="btn">Naar Competenties</a>
+
+<main class="page-main">
+    <div class="container">
+        <section class="section-heading">
+            <div>
+                <h2 class="page-title">Logboek</h2>
+                <p class="page-intro">Een overzicht van de planning en opdrachten binnen Werkplekleren.</p>
             </div>
-            <div class="overflow-x-auto w-full">
-                <table class="min-w-full">
-		    <thead class="bg-gray-700">
-                <tr>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Week</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Periode</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Inhoud</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Evaluaties</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Opdrachten</th>
-			    </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-700">
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">1</td>
-                            <td class="px-6 py-4">22/09 - 26/09</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>Introductie werkplekleren</li>
-                                    <li>Wat is programmeren</li>
-                                    <li>Introductie POP, X-Factor & SDG's</li>
-                                    <li>Introductie Scratch</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4"></td>
-                            <td class="px-6 py-4"></td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">2</td>
-                            <td class="px-6 py-4">29/09 - 03/10</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>Oriënteringstraject</li>
-                                    <li>Installatie Git & GitHub</li>
-                                    <li>Introductie Git & GitHub</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4">LockDownBrowser</td>
-                            <td class="px-6 py-4"></td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">3</td>
-                            <td class="px-6 py-4">06/10 - 10/10</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>POP motivatie, kerkwadranten en reflecteren</li>
-                                    <li>Labo: Git & GitHub</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4"></td>
-                            <td class="px-6 py-4">Scratch</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">4</td>
-                            <td class="px-6 py-4">13/10 - 17/10</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>POP planning & studieaanpak *</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4">Git & GitHub</td>
-                            <td class="px-6 py-4">Reflecteren</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">5</td>
-                            <td class="px-6 py-4">20/10 - 24/10</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>Gastsprekers</li>
-                                    <li>EPOS reflectie van oriënteringstraject</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4">Gastsprekers</td>
-                            <td class="px-6 py-4">Planning</td>
-                        </tr>
-                        <tr class="bg-gray-700">
-                            <td class="px-6 py-4 whitespace-nowrap text-center" colspan="5">Herfstvakantie</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">6</td>
-                            <td class="px-6 py-4">03/11 - 07/11</td>
-                            <td class="px-6 py-4">
-                                  <ul class="list-disc pl-5 space-y-1">
-                                    <li>POP leren analyseren</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4"></td>
-                            <td class="px-6 py-4"></td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">7</td>
-                            <td class="px-6 py-4">10/11 - 14/11</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>POP carrièrekompas</li>
-                                    <li>Feedback evaluatie</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4">C# Console</td>
-                            <td class="px-6 py-4">POP carrièrekompas</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">8</td>
-                            <td class="px-6 py-4">17/11 - 21/11</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>POP personal branding</li>
-                                    <li>Introductie curriculum vitae</li>
-                                    <li>Introductie portfolio</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4"></td>
-                            <td class="px-6 py-4">Feedback evaluatie C# Console</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">9</td>
-                            <td class="px-6 py-4">24/11 - 28/11</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>Instroombevraging</li>
-                                    <li>Feedback evaluatie</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4">HTML & CSS</td>
-                            <td class="px-6 py-4"></td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">10</td>
-                            <td class="px-6 py-4">01/12 - 05/12</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>Documenteren en debuggen in C#</li>
-                                    <li>Labo: Debugging (C#)</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4">Debugging (idem aan labo)</td>
-                            <td class="px-6 py-4">Feedback evaluatie debugging</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">11</td>
-                            <td class="px-6 py-4">08/12 - 12/12</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>Labo: WPF</li>
-                                    <li>Gastsprekers</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4">SDG's</td>
-                            <td class="px-6 py-4"></td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">12</td>
-                            <td class="px-6 py-4">15/12 - 19/12</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>POP kernkwadranten</li>
-                                    <li>Afwerken curriculum vitae</li>
-                                    <li>Afwerken labo WPF</li>
-                            	</ul>
-                        	</td>
-	                        <td class="px-6 py-4"></td>
-        	                <td class="px-6 py-4">Curriculum Vitae</td>
-			</tr>
-              	        <tr class="bg-gray-700">
-                	    <td class="px-6 py-4 whitespace-nowrap text-center" colspan="5">Kerstvakantie</td>
-                  	</tr>
-                    	<tr class="bg-gray-700">
-                            <td class="px-6 py-4 whitespace-nowrap text-center" colspan="5">Kerstvakantie</td>
-                    	</tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">13</td>
-                            <td class="px-6 py-4">05/01 - 09/01</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>Infosessie Thalento</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4">C# WPF</td>
-                            <td class="px-6 py-4">Portfolio</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">14</td>
-                            <td class="px-6 py-4">12/01 - 16/01</td>
-                            <td class="px-6 py-4">
-                                <ul class="list-disc pl-5 space-y-1">
-                                    <li>Introductie Corda</li>
-                                    <li>Feedback evaluatie C# WPF</li>
-                                </ul>
-                            </td>
-                            <td class="px-6 py-4">Inhaalmoment</td>
-                            <td class="px-6 py-4"></td>
-                        </tr>
-                    </tbody>
-	        </table>
+        </section>
+
+        <section class="tab-shell" data-tabs>
+            <div class="wpl-tabs" role="tablist" aria-label="Werkplekleren periodes">
+                <button class="tab-button is-active" type="button" data-tab-target="wpl1">WPL1</button>
+                <button class="tab-button" type="button" data-tab-target="wpl2">WPL2</button>
             </div>
-                </table>
+
+            <div class="tab-panel is-active" data-tab-panel="wpl1">
+                <h2>Werkplekleren 1 Planning</h2>
+                <div class="timeline-table-wrap">
+                    <table class="timeline-table">
+                        <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Periode</th>
+                            <th>Inhoud</th>
+                            <th>Evaluaties</th>
+                            <th>Opdrachten</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>1</td><td>22/09 - 26/09</td><td>Introductie werkplekleren, POP, X-Factor, SDG's en Scratch.</td><td>-</td><td>-</td></tr>
+                        <tr><td>2</td><td>29/09 - 03/10</td><td>OriÃ«nteringstraject, installatie Git en GitHub.</td><td>LockDownBrowser</td><td>-</td></tr>
+                        <tr><td>3</td><td>06/10 - 10/10</td><td>POP motivatie, kernkwadranten, reflecteren en labo Git/GitHub.</td><td>-</td><td>Scratch</td></tr>
+                        <tr><td>4</td><td>13/10 - 17/10</td><td>POP planning en studieaanpak.</td><td>Git en GitHub</td><td>Reflecteren</td></tr>
+                        <tr><td>5</td><td>20/10 - 24/10</td><td>Gastsprekers en EPOS-reflectie van het oriÃ«nteringstraject.</td><td>Gastsprekers</td><td>Planning</td></tr>
+                        <tr class="timeline-break"><td colspan="5">Herfstvakantie</td></tr>
+                        <tr><td>6</td><td>03/11 - 07/11</td><td>POP leren analyseren.</td><td>-</td><td>-</td></tr>
+                        <tr><td>7</td><td>10/11 - 14/11</td><td>POP carriÃ¨rekompas en feedbackevaluatie.</td><td>C# Console</td><td>POP carriÃ¨rekompas</td></tr>
+                        <tr><td>8</td><td>17/11 - 21/11</td><td>POP personal branding, curriculum vitae en portfolio.</td><td>-</td><td>Feedbackevaluatie C# Console</td></tr>
+                        <tr><td>9</td><td>24/11 - 28/11</td><td>Instroombevraging en feedbackevaluatie.</td><td>HTML en CSS</td><td>-</td></tr>
+                        <tr><td>10</td><td>01/12 - 05/12</td><td>Documenteren en debuggen in C#, labo debugging.</td><td>Debugging</td><td>Feedbackevaluatie debugging</td></tr>
+                        <tr><td>11</td><td>08/12 - 12/12</td><td>Labo WPF en gastsprekers.</td><td>SDG's</td><td>-</td></tr>
+                        <tr><td>12</td><td>15/12 - 19/12</td><td>POP kernkwadranten, curriculum vitae en labo WPF afwerken.</td><td>-</td><td>Curriculum Vitae</td></tr>
+                        <tr class="timeline-break"><td colspan="5">Kerstvakantie</td></tr>
+                        <tr><td>13</td><td>05/01 - 09/01</td><td>Infosessie Thalento.</td><td>C# WPF</td><td>Portfolio</td></tr>
+                        <tr><td>14</td><td>12/01 - 16/01</td><td>Introductie Corda en feedbackevaluatie C# WPF.</td><td>Inhaalmoment</td><td>-</td></tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
+
+            <div class="tab-panel" data-tab-panel="wpl2">
+                <h2>Werkplekleren 2</h2>
+                <p>Deze sectie is klaar voor de WPL2-planning. Hier kunnen later de caseplanning, teammomenten, feedbackmomenten en opleveringen toegevoegd worden.</p>
+                <a class="button" href="ontwikkeling.html">Naar ontwikkeling</a>
+            </div>
+        </section>
     </div>
 </main>
-<footer class="dark-footer">
-    <div class="container mx-auto px-4 text-center text-gray-400">
-        <p>Mijn Portfolio - Werkplekleren 1</p>
-        <p>Graduaat in Programmeren - Hogeschool PXL</p>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>Portfolio Ibrahim Koc</span>
+        <a class="footer-top" href="#top">Naar boven</a>
+        <span>Werkplekleren - Graduaat Programmeren</span>
     </div>
 </footer>
 </body>

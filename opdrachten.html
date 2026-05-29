@@ -1,136 +1,72 @@
 <!DOCTYPE html>
-<html lang="nl" class="dark">
+<html lang="nl">
 <head>
+    <script>document.documentElement.classList.add("js");</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opdrachten - Mijn Portfolio</title>
+    <title>Opdrachten - Portfolio Ibrahim Koc</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body class="dark-bg light-text full-height">
-<header class="bg-gray-800 shadow-lg">
-    <div class="container mx-auto px-4 py-6">
-        <h1 class="text-3xl font-bold">Opdrachten</h1>
-        <p class="text-gray-400">Graduaat in Programmeren - Hogeschool PXL</p>
+<body id="top">
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand-link" href="index.html">
+            <h1 class="brand-title">Portfolio Ibrahim Koc</h1>
+            <p class="brand-subtitle">Graduaat Programmeren - Hogeschool PXL</p>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Navigatie openen"><span></span><span></span></button>
+        <nav class="main-nav" id="main-nav" aria-label="Hoofdnavigatie">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="intro.html">Introductie</a>
+            <a class="nav-link" href="logboek.html">Logboek</a>
+            <a class="nav-link" href="ontwikkeling.html">Ontwikkeling</a>
+            <a class="nav-link" href="opdrachten.html">Opdrachten</a>
+            <a class="nav-link" href="reflectie.html">Reflectie</a>
+        </nav>
     </div>
-    <nav class="bg-gray-700">
-        <div class="container mx-auto px-4">
-            <ul class="flex flex-wrap">
-                <li class="mr-6"><a href="index.html" class="block py-4 px-2 hover:bg-gray-600">Home</a></li>
-                <li class="mr-6"><a href="intro.html" class="block py-4 px-2 hover:bg-gray-600">Introductie</a></li>
-                <li class="mr-6"><a href="logboek.html" class="block py-4 px-2 hover:bg-gray-600">Logboek</a></li>
-                <li class="mr-6"><a href="ontwikkeling.html" class="block py-4 px-2 hover:bg-gray-600">Ontwikkeling</a></li>
-                <li class="mr-6"><a href="reflectie.html" class="block py-4 px-2 hover:bg-gray-600">Reflectie</a></li>
-            </ul>
-        </div>
-    </nav>
 </header>
-<main class="container mx-auto px-4 py-8">
-    <div class="grid grid-cols-2 gap-8 mb-12">
-        <div class="card">
-            <h2 class="text-2xl font-bold mb-6">Overzicht van Opdrachten</h2>
-                <div class="space-y-8">
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Scratch</h3>
-                        <div class="space-y-6">
-                            <div class="border-l-4 border-blue-500 pl-4">
-                                <div class="mt-2 space-y-2">
-                                    <p><strong>Beschrijving:</strong> Dit was de eerste 'project' die wij moesten uitvoeren. De opdracht was: een simpel spel maken op Scratch</p>
-                                    <p><strong>Uitdagingen:</strong> Een uitdaging bij deze opdracht voor mij was niet te fel letten op de details van mijn sprites.</p>
-                                    <p><strong>Wat ik leerde:</strong> Omdat ik met deze opdracht goed op tijd was begonnen en dus ook mijn tijd hier voor nam, 
-                                    is het anders gelopen dan veel van mijn andere opdrachten/projecten. Ik stel vaak uit, maar hier was dat niet het geval.
-                                    Ik leerde hierdoor bij het nut van op het gemak en met voldoende tijd aan iets werken.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">POP Opdrachten</h3>
-                        <div class="space-y-6">
-                            <div class="border-l-4 border-blue-500 pl-4">
-                                <div class="mt-2 space-y-2">
-                                    <p><strong>Beschrijving:</strong> De POP-opdrachten waren eigenlijk opdrachten voor onszelf. Het was een manier van zelf ontdekking.
-                                    We moesten kijken waar we goed in waren en waar we minder goed in waren. Het ging zo goed als altijd over soft-skills en niet over hard-skills.</p>
-                                    <p><strong>Uitdagingen:</strong> Er waren niet echt moeilijke aspecten aan deze opdrachten, 
-                                    soms duurde het wat lang om zo eerlijk mogelijk te proberen antwoorden op sommige assessments.</p>
-                                    <p><strong>Wat ik leerde:</strong> Ik heb een Kernkwadrant kunnen leren van mezelf, iets wat ik als minder goed zag, had ook een betere kant, 
-                                    maar meer hierover in mijn Reflectie.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">HTML & CSS</h3>
-                        <div class="border-l-4 border-blue-500 pl-4">
-                            <div class="mt-2 space-y-2">
-                                <p><strong>Beschrijving:</strong> Bij deze opdracht moesten we een website zo goed mogelijk na bouwen met HTML en CSS.</p>
-                                <p><strong>Uitdagingen:</strong> Ik vond dat deze opdracht tot nu toe het slechts was gegaan. Ik had al even niet gewerkt met web-development.</p>
-                                <p><strong>Wat ik leerde:</strong> Opfrissing van mijn HTML en CSS kennis.</p>
-                            </div>
-                        </div>
-                    </div>
+<main class="page-main">
+    <div class="container">
+        <section class="section-heading">
+            <div>
+                <h2 class="page-title">Opdrachten</h2>
+                <p class="page-intro">Projecten, taken en leerpunten uit Werkplekleren.</p>
+            </div>
+        </section>
 
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">C# Projecten</h3>
-                        <div class="space-y-6">
-                            <div class="border-l-4 border-blue-500 pl-4">
-                                <div class="mt-2 space-y-2">
-                                    <p><strong>Beschrijving:</strong> De opdrachten Debugging, C# Console en C# WPF in 1. 
-                                    Een WPF applicatie gebouwd (teammanager), met de C# Console gewerkt en ook een stuk code Debuggen.</p>
-                                    <p><strong>Uitdagingen:</strong> Omdat ik al even niet had gewerkt aan een WPF applicatie, moest ik eventjes alles opfrissen.</p>
-                                    <p><strong>Wat ik leerde:</strong> Deze opdrachten geven mij iedere keer meer ervaring met het werken met deze programmeertalen.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section class="tab-shell" data-tabs>
+            <div class="wpl-tabs" role="tablist" aria-label="Werkplekleren opdrachten">
+                <button class="tab-button is-active" type="button" data-tab-target="wpl1">WPL1</button>
+                <button class="tab-button" type="button" data-tab-target="wpl2">WPL2</button>
+            </div>
 
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Curriculum Vitae</h3>
-                        <div class="border-l-4 border-blue-500 pl-4">
-                            <div class="mt-2 space-y-2">
-                                <p><strong>Beschrijving:</strong> Voor deze opdracht moest ieder zijn eigen CV maken met HTML en CSS.</p>
-                                <p><strong>Uitdagingen:</strong> Een mooi design vinden voor mijn site, ging niet zo vlot.</p>
-                                <p><strong>Wat ik leerde:</strong> Dat web-development ook wel fijn kan zijn :D</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Portfolio</h3>
-                        <div class="border-l-4 border-blue-500 pl-4">
-                            <div class="mt-2 space-y-2">
-                                <p><strong>Beschrijving:</strong> Net zoals de opdracht CV, moesten wij deze Portfolio website van 0 opbouwen en ook op GitHub-Pages live zetten.</p>
-                                <p><strong>Uitdagingen:</strong> Het was eigenlijk 1 grote reflectie van mezelf, mijn keuze van deze opleiding en mijn carrièrepad. 
-                                Hier concreet over nadenken was niet zo makkelijk bij alles.</p>
-                                <p><strong>Wat ik leerde:</strong> Ik heb een betere inzicht gekregen over mijn toekomst als programmeur.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="tab-panel is-active" data-tab-panel="wpl1">
+                <div class="stack">
+                    <article class="subcard"><h3>Scratch</h3><p><strong>Beschrijving:</strong> Dit was het eerste project dat wij moesten uitvoeren. De opdracht was om een simpel spel te maken in Scratch.</p><p><strong>Wat ik leerde:</strong> Door op tijd te starten werkte ik rustiger en met meer overzicht.</p></article>
+                    <article class="subcard"><h3>POP Opdrachten</h3><p><strong>Beschrijving:</strong> De POP-opdrachten waren gericht op zelfontdekking, soft skills en reflectie.</p><p><strong>Wat ik leerde:</strong> Ik kreeg meer inzicht in mijn kernkwaliteiten, valkuilen en werkpunten.</p></article>
+                    <article class="subcard"><h3>HTML en CSS</h3><p><strong>Beschrijving:</strong> Bij deze opdracht moesten we een website zo goed mogelijk nabouwen met HTML en CSS.</p><p><strong>Wat ik leerde:</strong> Ik friste mijn HTML- en CSS-kennis op.</p></article>
+                    <article class="subcard"><h3>C# Projecten</h3><p><strong>Beschrijving:</strong> Dit omvatte debugging, C# Console en C# WPF.</p><p><strong>Wat ik leerde:</strong> Elke opdracht gaf mij meer ervaring met C# en de bijhorende ontwikkelomgeving.</p></article>
+                    <article class="subcard"><h3>Curriculum Vitae</h3><p><strong>Beschrijving:</strong> Voor deze opdracht maakte ieder zijn eigen CV met HTML en CSS.</p></article>
+                    <article class="subcard"><h3>Portfolio</h3><p><strong>Beschrijving:</strong> Net zoals bij de CV-opdracht moesten wij deze portfolio vanaf nul opbouwen en via GitHub Pages publiceren.</p></article>
                 </div>
             </div>
 
-            <div class="card">
-                <h2 class="text-2xl font-bold mb-6">Project Highlights</h2>
-                <div class="space-y-4">
-                    <p>In mijn projecten heb ik zowel technische als persoonlijke vaardigheden ontwikkeld. 
-                    Ik heb geleerd om gestructureerd te werken en om opdrachten van begin tot einde af te ronden. 
-                    Tijdens deze projecten werd het duidelijk hoe belangrijk planning en reflectie zijn.</p>
-                    <p>Ik ben vooral trots op het design van mijn Scratch-spel en op de opmaak van mijn CV-pagina. 
-                    Deze opdrachten lieten mij toe om creatief bezig te zijn en tegelijk mijn technische kennis toe te passen.</p>
-                </div>
-                <div class="mt-6 text-center">
-                    <a href="reflectie.html" class="btn">
-                        Naar Reflectie
-                    </a>
-                </div>
+            <div class="tab-panel" data-tab-panel="wpl2">
+                <h2>WPL2 Case</h2>
+                <p>Deze sectie is voorbereid voor de casebeschrijving, mijn aandeel en eventuele projectartefacten van Werkplekleren 2.</p>
+                <a class="button" href="reflectie.html">Naar reflectie</a>
             </div>
-        </div>
-    </main>
-<footer class="dark-footer">
-    <div class="container mx-auto px-4 text-center text-gray-400">
-        <p>Mijn Portfolio - Werkplekleren 1</p>
-        <p>Graduaat in Programmeren - Hogeschool PXL</p>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>Portfolio Ibrahim Koc</span>
+        <a class="footer-top" href="#top">Naar boven</a>
+        <span>Werkplekleren - Graduaat Programmeren</span>
     </div>
 </footer>
 </body>
