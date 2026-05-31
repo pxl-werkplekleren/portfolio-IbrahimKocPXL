@@ -15,6 +15,7 @@
     --shadow-strong: 0 26px 70px rgba(18, 18, 18, 0.18);
     --radius: 8px;
     --header-height: 76px;
+    --card-delay: 0ms;
 }
 
 * {
@@ -555,20 +556,26 @@ dd {
     background: rgba(255, 253, 248, 0.7);
     box-shadow: var(--shadow);
     transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    min-height: 142px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .metric-card strong {
     display: block;
-    font-size: clamp(2rem, 4vw, 3.1rem);
+    font-size: clamp(1.65rem, 3vw, 2.35rem);
     line-height: 1;
     letter-spacing: 0;
+    color: var(--brand-dark);
 }
 
 .metric-card span {
     display: block;
-    margin-top: 8px;
+    margin-top: 14px;
     color: var(--muted);
     font-weight: 700;
+    max-width: 18rem;
 }
 
 .wpl-tabs {
